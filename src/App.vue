@@ -3,6 +3,9 @@
   import List from './components/List.vue';
   import Table from './components/Table.vue';
   import Drawer from './components/Drawer.vue';
+
+
+  const drawerOpen = ref(false);
 </script>
 
 
