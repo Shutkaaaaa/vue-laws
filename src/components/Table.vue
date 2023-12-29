@@ -1,5 +1,10 @@
+<script setup>
+  const emit = defineEmits(['openDrawer']);
+</script>
+
+
 <template>
-    <div class="w-full mt-10">
+    <div v-auto-animate class="w-full mt-10">
       <table class="w-full rounded-xl">
         <th class="px-5 w-1/4 border-b border-gray-200"> 
           Раздел
@@ -28,7 +33,7 @@
         
       </table>
 
-    <div class="flex m-auto p-auto mt-10 items-center cursor-pointer rounded-xl shadow-xl w-48 hover:bg-slate-200 hover:text-gray-500">
+    <div @click="() => emit('openDrawer')" class="bg-orange-100 flex m-auto p-auto mt-10 items-center cursor-pointer rounded-xl shadow-xl w-48 hover:bg-slate-200 hover:text-gray-500">
             <img src="/add.png" alt="Add" class="w-5 h-5 m-3 p-auto">
             <h3 class="m-auto p-auto">Добавить</h3>
     </div>
